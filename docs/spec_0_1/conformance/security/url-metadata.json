@@ -1,0 +1,21 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "security.url-metadata",
+  "category": "security",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "url-metadata",
+  "appliesTo": [
+    "canonical_validator",
+    "playback_reader"
+  ],
+  "input": {
+    "fixture": "security/url-metadata.veil"
+  },
+  "expected": {
+    "parserStatus": "ACCEPT",
+    "runtimeEffect": "INERT",
+    "networkEffect": "NONE",
+    "filesystemEffect": "NONE"
+  }
+}

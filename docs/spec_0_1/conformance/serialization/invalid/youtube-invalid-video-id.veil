@@ -1,0 +1,15 @@
+{
+  "version": "1.6.0",
+  "app": "VEIL",
+  "media": {
+    "kind": "youtube",
+    "provider": "youtube",
+    "videoId": "short",
+    "canonicalUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "duration": 120.5,
+    "title": "Optional title"
+  },
+  "globalOffsetSeconds": 0,
+  "trackMetadata": {},
+  "items": []
+}

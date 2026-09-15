@@ -1,0 +1,21 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "security.custom-uri",
+  "category": "security",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "custom-uri",
+  "appliesTo": [
+    "canonical_validator",
+    "playback_reader"
+  ],
+  "input": {
+    "fixture": "security/custom-uri.veil"
+  },
+  "expected": {
+    "parserStatus": "ACCEPT",
+    "runtimeEffect": "INERT",
+    "networkEffect": "NONE",
+    "filesystemEffect": "NONE"
+  }
+}

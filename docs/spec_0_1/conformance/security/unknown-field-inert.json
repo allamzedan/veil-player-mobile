@@ -1,0 +1,21 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "security.unknown-field-inert",
+  "category": "security",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "unknown-field-inert",
+  "appliesTo": [
+    "canonical_validator",
+    "playback_reader"
+  ],
+  "input": {
+    "fixture": "security/unknown-field-inert.veil"
+  },
+  "expected": {
+    "parserStatus": "ACCEPT",
+    "runtimeEffect": "INERT",
+    "networkEffect": "NONE",
+    "filesystemEffect": "NONE"
+  }
+}

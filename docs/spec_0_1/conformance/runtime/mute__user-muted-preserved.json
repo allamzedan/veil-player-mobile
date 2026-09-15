@@ -1,0 +1,65 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "runtime.mute.user-muted-preserved",
+  "category": "runtime",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "VEIL range mute ends without destroying pre-existing user mute intent.",
+  "appliesTo": [
+    "runtime"
+  ],
+  "input": {
+    "initialState": {
+      "playbackState": "playing",
+      "position": 15,
+      "effectiveMediaDuration": 100,
+      "globalOffsetSeconds": 0,
+      "userMuted": true,
+      "volume": 1
+    },
+    "timeline": {
+      "items": [
+        {
+          "id": "mute-1",
+          "type": "mute",
+          "enabled": true,
+          "start": 10,
+          "end": 20
+        }
+      ]
+    },
+    "events": [
+      {
+        "type": "POSITION",
+        "time": 15
+      },
+      {
+        "type": "POSITION",
+        "time": 21
+      }
+    ]
+  },
+  "expected": {
+    "trace": [
+      {
+        "eventIndex": 0,
+        "actions": [
+          {
+            "type": "MUTE_ACTIVE"
+          }
+        ]
+      },
+      {
+        "eventIndex": 1,
+        "actions": [
+          {
+            "type": "MUTE_INACTIVE"
+          }
+        ]
+      }
+    ],
+    "finalState": {
+      "userMuted": true
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "runtime.mask.start",
+  "category": "runtime",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "runtime.mask.start",
+  "appliesTo": [
+    "runtime"
+  ],
+  "input": {
+    "initialState": {
+      "playbackState": "playing",
+      "position": 0,
+      "effectiveMediaDuration": 100,
+      "globalOffsetSeconds": 0,
+      "userMuted": false,
+      "volume": 1
+    },
+    "timeline": {
+      "items": [
+        {
+          "id": "mask-1",
+          "type": "mask",
+          "enabled": true,
+          "start": 10,
+          "end": 20,
+          "rect": {
+            "xPercent": 10,
+            "yPercent": 10,
+            "widthPercent": 20,
+            "heightPercent": 20
+          }
+        }
+      ]
+    },
+    "events": [
+      {
+        "type": "POSITION",
+        "time": 10
+      }
+    ]
+  },
+  "expected": {
+    "trace": [
+      {
+        "eventIndex": 0,
+        "actions": [
+          {
+            "type": "MASK_ACTIVE",
+            "itemIds": [
+              "mask-1"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

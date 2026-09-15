@@ -1,0 +1,18 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "serialization.invalid.youtube-invalid-duration",
+  "category": "serialization",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "YouTube duration must be finite nonnegative when present.",
+  "appliesTo": [
+    "canonical_validator",
+    "playback_reader"
+  ],
+  "input": {
+    "fixture": "serialization/invalid/youtube-invalid-duration.veil"
+  },
+  "expected": {
+    "parserStatus": "REJECT_DOCUMENT"
+  }
+}

@@ -1,0 +1,3 @@
+# Preserve verbatim license and frozen imported corpus bytes.
+LICENSE -whitespace
+docs/spec_0_1/conformance/** -whitespace

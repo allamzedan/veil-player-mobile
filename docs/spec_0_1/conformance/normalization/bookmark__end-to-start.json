@@ -1,0 +1,38 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "normalization.bookmark.end-to-start",
+  "category": "normalization",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "Bookmark end normalizes to start with canonical load defaults.",
+  "appliesTo": [
+    "canonical_validator",
+    "playback_reader",
+    "writer"
+  ],
+  "input": {
+    "items": [
+      {
+        "id": "b1",
+        "type": "bookmark",
+        "start": 15,
+        "end": 22,
+        "enabled": true
+      }
+    ]
+  },
+  "expected": {
+    "items": [
+      {
+        "id": "b1",
+        "type": "bookmark",
+        "start": 15,
+        "end": 15,
+        "enabled": true,
+        "label": "Bookmark",
+        "notes": "",
+        "locked": false
+      }
+    ]
+  }
+}

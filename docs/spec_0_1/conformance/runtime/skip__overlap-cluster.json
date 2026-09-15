@@ -1,0 +1,58 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "runtime.skip.overlap-cluster",
+  "category": "runtime",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "runtime.skip.overlap-cluster",
+  "appliesTo": [
+    "runtime"
+  ],
+  "input": {
+    "initialState": {
+      "playbackState": "playing",
+      "position": 0,
+      "effectiveMediaDuration": 100,
+      "globalOffsetSeconds": 0,
+      "userMuted": false,
+      "volume": 1
+    },
+    "timeline": {
+      "items": [
+        {
+          "id": "skip-1",
+          "type": "skip",
+          "enabled": true,
+          "start": 10,
+          "end": 20
+        },
+        {
+          "id": "skip-2",
+          "type": "skip",
+          "enabled": true,
+          "start": 15,
+          "end": 30
+        }
+      ]
+    },
+    "events": [
+      {
+        "type": "POSITION",
+        "time": 10
+      }
+    ]
+  },
+  "expected": {
+    "trace": [
+      {
+        "eventIndex": 0,
+        "actions": [
+          {
+            "type": "SEEK_TO",
+            "target": 30
+          }
+        ]
+      }
+    ]
+  }
+}

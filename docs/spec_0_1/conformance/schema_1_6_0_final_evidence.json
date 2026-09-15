@@ -1,0 +1,73 @@
+{
+  "baseline": {
+    "desktopVersion": "0.8.0-RC1",
+    "desktopCommit": "cb96798ccd4dd4d2576d5e64905cc922ae99de04"
+  },
+  "resolved": {
+    "MIN_MASK_SIZE": {
+      "widthPercent": 1,
+      "heightPercent": 1
+    },
+    "mask.style.mode": {
+      "allowed": [
+        "solid"
+      ]
+    },
+    "mask.style.color": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trackMetadata.rating": {
+      "optional": true,
+      "types": [
+        "string",
+        "number"
+      ],
+      "range": null,
+      "writerOmitWhen": [
+        "",
+        null
+      ]
+    },
+    "trackMetadata.downloads": {
+      "optional": true,
+      "type": "number",
+      "finite": true,
+      "minimum": 0,
+      "writerNormalization": "floor"
+    },
+    "video.binding": {
+      "optional": true,
+      "allowed": [
+        "metadata",
+        "unbound"
+      ]
+    },
+    "manual-unbound": {
+      "field": "video.fingerprint.method",
+      "value": "manual-unbound"
+    },
+    "media.youtube": {
+      "kind": "youtube",
+      "provider": "youtube",
+      "videoIdPattern": "^[A-Za-z0-9_-]{11}$",
+      "canonicalUrl": {
+        "required": true,
+        "validation": "URL"
+      },
+      "duration": {
+        "required": false,
+        "finite": true,
+        "minimum": 0
+      },
+      "title": {
+        "required": false,
+        "type": "string"
+      },
+      "identityAuthority": [
+        "provider",
+        "videoId"
+      ]
+    }
+  }
+}

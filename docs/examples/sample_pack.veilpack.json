@@ -1,0 +1,124 @@
+{
+  "format": "veil.pack",
+  "version": "1.0.0",
+  "pack": {
+    "id": "pack-family-safe-001",
+    "title": "Family Safe Collection",
+    "description": "Curated VEIL tracks for family viewing.",
+    "author": "VEIL Mobile",
+    "createdAt": "2026-05-19T10:00:00.000Z",
+    "updatedAt": "2026-05-19T12:00:00.000Z",
+    "tags": [
+      "family",
+      "safe"
+    ],
+    "tracks": [
+      {
+        "trackTitle": "Sample Track",
+        "trackJson": {
+          "version": "1.4.0",
+          "app": "VEIL",
+          "appVersion": "VEIL Mobile 0.2.0",
+          "exportedAt": "2026-05-19T12:00:00.000Z",
+          "video": {
+            "name": "sample.mp4",
+            "duration": 120,
+            "fileSize": 10485760,
+            "resolution": {
+              "width": 1280,
+              "height": 720
+            },
+            "fingerprint": {
+              "method": "metadata-v1",
+              "value": "sample.mp4|10485760|120.000|1280|720"
+            }
+          },
+          "globalOffsetSeconds": 0,
+          "trackMetadata": {
+            "createdAt": "2026-05-19T10:00:00.000Z",
+            "updatedAt": "2026-05-19T11:30:00.000Z"
+          },
+          "items": [
+            {
+              "id": "mask-pack-1",
+              "type": "mask",
+              "enabled": true,
+              "start": 1,
+              "end": 3,
+              "rect": {
+                "xPercent": 10,
+                "yPercent": 78,
+                "widthPercent": 80,
+                "heightPercent": 18
+              },
+              "style": {
+                "mode": "solid",
+                "color": "#000000",
+                "opacity": 1
+              },
+              "source": {
+                "kind": "manual"
+              }
+            }
+          ],
+          "subtitleCover": {
+            "mode": "smartCover",
+            "regionRect": {
+              "xPercent": 10,
+              "yPercent": 78,
+              "widthPercent": 80,
+              "heightPercent": 18
+            }
+          }
+        }
+      },
+      {
+        "trackTitle": "Lecture with Bookmarks",
+        "trackJson": {
+          "version": "1.4.0",
+          "app": "VEIL",
+          "appVersion": "VEIL Mobile 0.2.0",
+          "exportedAt": "2026-05-19T12:00:00.000Z",
+          "video": {
+            "name": "lecture.mp4",
+            "duration": 3600,
+            "fileSize": 524288000,
+            "resolution": {
+              "width": 1920,
+              "height": 1080
+            },
+            "fingerprint": {
+              "method": "metadata-v1",
+              "value": "lecture.mp4|524288000|3600.000|1920|1080"
+            }
+          },
+          "globalOffsetSeconds": 0,
+          "trackMetadata": {
+            "createdAt": "2026-05-19T10:00:00.000Z",
+            "updatedAt": "2026-05-19T12:00:00.000Z"
+          },
+          "items": [
+            {
+              "id": "bm-pack-1",
+              "type": "bookmark",
+              "enabled": true,
+              "start": 862,
+              "end": 862,
+              "label": "Vocabulary word",
+              "notes": "Review later"
+            }
+          ],
+          "subtitleCover": {
+            "mode": "smartCover",
+            "regionRect": {
+              "xPercent": 10,
+              "yPercent": 78,
+              "widthPercent": 80,
+              "heightPercent": 18
+            }
+          }
+        }
+      }
+    ]
+  }
+}

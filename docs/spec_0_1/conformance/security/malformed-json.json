@@ -1,0 +1,21 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "security.malformed-json",
+  "category": "security",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "Malformed JSON fails safely.",
+  "appliesTo": [
+    "canonical_validator",
+    "playback_reader"
+  ],
+  "input": {
+    "fixture": "serialization/invalid/malformed-json.veil"
+  },
+  "expected": {
+    "parserStatus": "REJECT_DOCUMENT",
+    "runtimeEffect": "NONE",
+    "networkEffect": "NONE",
+    "filesystemEffect": "NONE"
+  }
+}

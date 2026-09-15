@@ -1,0 +1,18 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "serialization.invalid.mask-below-min-height",
+  "category": "serialization",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "Mask height below 1% is invalid.",
+  "appliesTo": [
+    "canonical_validator",
+    "playback_reader"
+  ],
+  "input": {
+    "fixture": "serialization/invalid/mask-below-min-height.veil"
+  },
+  "expected": {
+    "parserStatus": "REJECT_DOCUMENT"
+  }
+}

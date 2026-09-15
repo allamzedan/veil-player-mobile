@@ -1,0 +1,38 @@
+{
+  "version": "1.6.0",
+  "app": "VEIL",
+  "appVersion": "0.8.0-rc.2",
+  "exportedAt": "2026-09-15T00:00:00.000Z",
+  "video": {
+    "name": "synthetic-veil-6s.wav",
+    "duration": 6,
+    "fileSize": 96044,
+    "resolution": {
+      "width": 0,
+      "height": 0
+    },
+    "fingerprint": {
+      "method": "metadata-v1",
+      "value": "synthetic-veil-6s.wav|96044|6.000|0|0"
+    }
+  },
+  "globalOffsetSeconds": 0,
+  "trackMetadata": {
+    "title": "VEIL RC2 synthetic interoperability",
+    "createdAt": "2026-09-15T00:00:00.000Z",
+    "updatedAt": "2026-09-15T00:00:00.000Z"
+  },
+  "items": [],
+  "subtitleCover": {
+    "mode": "show",
+    "regionRect": {
+      "xPercent": 10,
+      "yPercent": 78,
+      "widthPercent": 80,
+      "heightPercent": 18
+    }
+  },
+  "futureRoot": {
+    "displayHint": "inert"
+  }
+}

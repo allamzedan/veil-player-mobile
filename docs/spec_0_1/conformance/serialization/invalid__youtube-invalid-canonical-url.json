@@ -1,0 +1,18 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "serialization.invalid.youtube-invalid-canonical-url",
+  "category": "serialization",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "canonicalUrl is required and URL-valid.",
+  "appliesTo": [
+    "canonical_validator",
+    "playback_reader"
+  ],
+  "input": {
+    "fixture": "serialization/invalid/youtube-invalid-canonical-url.veil"
+  },
+  "expected": {
+    "parserStatus": "REJECT_DOCUMENT"
+  }
+}

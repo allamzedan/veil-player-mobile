@@ -1,0 +1,18 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "serialization.invalid.video-binding-invalid-value",
+  "category": "serialization",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "manual-unbound is a fingerprint method, not binding value.",
+  "appliesTo": [
+    "canonical_validator",
+    "playback_reader"
+  ],
+  "input": {
+    "fixture": "serialization/invalid/video-binding-invalid-value.veil"
+  },
+  "expected": {
+    "parserStatus": "REJECT_DOCUMENT"
+  }
+}

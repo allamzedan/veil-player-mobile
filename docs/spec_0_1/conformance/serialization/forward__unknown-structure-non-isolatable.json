@@ -1,0 +1,18 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "serialization.forward.unknown-structure-non-isolatable",
+  "category": "serialization",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "serialization.forward.unknown-structure-non-isolatable",
+  "appliesTo": [
+    "canonical_validator",
+    "playback_reader"
+  ],
+  "input": {
+    "fixture": "serialization/forward/unknown-structure-non-isolatable.veil"
+  },
+  "expected": {
+    "parserStatus": "REJECT_DOCUMENT"
+  }
+}

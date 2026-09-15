@@ -1,0 +1,60 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "runtime.reconcile.disable-change",
+  "category": "runtime",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "runtime.reconcile.disable-change",
+  "appliesTo": [
+    "runtime"
+  ],
+  "input": {
+    "initialState": {
+      "playbackState": "playing",
+      "position": 15,
+      "effectiveMediaDuration": 100,
+      "globalOffsetSeconds": 0,
+      "userMuted": false,
+      "volume": 1
+    },
+    "timeline": {
+      "items": [
+        {
+          "id": "mute-1",
+          "type": "mute",
+          "enabled": true,
+          "start": 10,
+          "end": 20
+        }
+      ]
+    },
+    "events": [
+      {
+        "type": "TIMELINE_CHANGE",
+        "timeline": {
+          "items": [
+            {
+              "id": "mute-1",
+              "type": "mute",
+              "enabled": false,
+              "start": 10,
+              "end": 20
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "expected": {
+    "trace": [
+      {
+        "eventIndex": 0,
+        "actions": [
+          {
+            "type": "MUTE_INACTIVE"
+          }
+        ]
+      }
+    ]
+  }
+}

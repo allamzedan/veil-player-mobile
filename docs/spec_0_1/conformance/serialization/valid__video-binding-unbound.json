@@ -1,0 +1,18 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "serialization.valid.video-binding-unbound",
+  "category": "serialization",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "video.binding may be unbound.",
+  "appliesTo": [
+    "canonical_validator",
+    "playback_reader"
+  ],
+  "input": {
+    "fixture": "serialization/valid/video-binding-unbound.veil"
+  },
+  "expected": {
+    "parserStatus": "ACCEPT"
+  }
+}

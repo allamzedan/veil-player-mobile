@@ -1,0 +1,73 @@
+{
+  "version": "1.4.0",
+  "app": "VEIL",
+  "appVersion": "VEIL Mobile 0.2.0",
+  "exportedAt": "2026-05-19T12:00:00.000Z",
+  "video": {
+    "name": "lecture.mp4",
+    "duration": 3600,
+    "fileSize": 524288000,
+    "resolution": {
+      "width": 1920,
+      "height": 1080
+    },
+    "fingerprint": {
+      "method": "metadata-v1",
+      "value": "lecture.mp4|524288000|3600.000|1920|1080"
+    }
+  },
+  "globalOffsetSeconds": 0,
+  "trackMetadata": {
+    "createdAt": "2026-05-19T10:00:00.000Z",
+    "updatedAt": "2026-05-19T12:00:00.000Z"
+  },
+  "items": [
+    {
+      "id": "mask-001",
+      "type": "mask",
+      "enabled": true,
+      "start": 91.7,
+      "end": 112,
+      "rect": {
+        "xPercent": 21.19,
+        "yPercent": 79.36,
+        "widthPercent": 63.21,
+        "heightPercent": 11.36
+      },
+      "style": {
+        "mode": "solid",
+        "color": "#000000",
+        "opacity": 1
+      },
+      "source": {
+        "kind": "manual"
+      }
+    },
+    {
+      "id": "bm-862",
+      "type": "bookmark",
+      "enabled": true,
+      "start": 862,
+      "end": 862,
+      "label": "Vocabulary word",
+      "notes": "Important scene — review later"
+    },
+    {
+      "id": "bm-1200",
+      "type": "bookmark",
+      "enabled": true,
+      "start": 1200,
+      "end": 1200,
+      "label": "Chapter break"
+    }
+  ],
+  "subtitleCover": {
+    "mode": "smartCover",
+    "regionRect": {
+      "xPercent": 10,
+      "yPercent": 78,
+      "widthPercent": 80,
+      "heightPercent": 18
+    }
+  }
+}

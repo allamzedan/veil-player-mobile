@@ -1,0 +1,54 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "security.limit.string",
+  "category": "security",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "Configured string limit is enforced.",
+  "appliesTo": [
+    "canonical_validator",
+    "playback_reader"
+  ],
+  "input": {
+    "resourcePolicy": {
+      "maxStringLength": 16
+    },
+    "document": {
+      "version": "1.6.0",
+      "app": "VEIL",
+      "video": {
+        "name": "sample.mp4",
+        "duration": 120.0,
+        "fileSize": 1000000,
+        "resolution": {
+          "width": 1920,
+          "height": 1080
+        },
+        "fingerprint": {
+          "method": "metadata-v1",
+          "value": "sample.mp4|1000000|120.000|1920|1080"
+        }
+      },
+      "globalOffsetSeconds": 0.0,
+      "trackMetadata": {
+        "notes": "XXXXXXXXXXXXXXXXX"
+      },
+      "items": [],
+      "subtitleCover": {
+        "mode": "show",
+        "regionRect": {
+          "xPercent": 10,
+          "yPercent": 78,
+          "widthPercent": 80,
+          "heightPercent": 18
+        }
+      }
+    }
+  },
+  "expected": {
+    "parserStatus": "LIMIT_EXCEEDED",
+    "runtimeEffect": "NONE",
+    "networkEffect": "NONE",
+    "filesystemEffect": "NONE"
+  }
+}

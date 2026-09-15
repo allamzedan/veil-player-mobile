@@ -1,0 +1,32 @@
+{
+  "version": "1.6.0",
+  "app": "VEIL",
+  "video": {
+    "name": "sample.mp4",
+    "duration": 120.0,
+    "fileSize": 1000000,
+    "resolution": {
+      "width": 1920,
+      "height": 1080
+    },
+    "fingerprint": {
+      "method": "metadata-v1",
+      "value": "sample.mp4|1000000|120.000|1920|1080"
+    }
+  },
+  "globalOffsetSeconds": 0.0,
+  "trackMetadata": {},
+  "items": [],
+  "subtitleCover": {
+    "mode": "show",
+    "regionRect": {
+      "xPercent": 10,
+      "yPercent": 78,
+      "widthPercent": 80,
+      "heightPercent": 18
+    }
+  },
+  "futureField": {
+    "command": "rm -rf /"
+  }
+}

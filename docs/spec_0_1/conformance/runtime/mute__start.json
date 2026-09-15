@@ -1,0 +1,50 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "runtime.mute.start",
+  "category": "runtime",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "runtime.mute.start",
+  "appliesTo": [
+    "runtime"
+  ],
+  "input": {
+    "initialState": {
+      "playbackState": "playing",
+      "position": 0,
+      "effectiveMediaDuration": 100,
+      "globalOffsetSeconds": 0,
+      "userMuted": false,
+      "volume": 1
+    },
+    "timeline": {
+      "items": [
+        {
+          "id": "mute-1",
+          "type": "mute",
+          "enabled": true,
+          "start": 10,
+          "end": 20
+        }
+      ]
+    },
+    "events": [
+      {
+        "type": "POSITION",
+        "time": 10
+      }
+    ]
+  },
+  "expected": {
+    "trace": [
+      {
+        "eventIndex": 0,
+        "actions": [
+          {
+            "type": "MUTE_ACTIVE"
+          }
+        ]
+      }
+    ]
+  }
+}

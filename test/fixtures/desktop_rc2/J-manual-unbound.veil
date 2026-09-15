@@ -1,0 +1,36 @@
+{
+  "version": "1.6.0",
+  "app": "VEIL",
+  "appVersion": "0.8.0-rc.2",
+  "exportedAt": "2026-09-15T00:00:00.000Z",
+  "video": {
+    "binding": "unbound",
+    "name": "",
+    "duration": 2,
+    "fileSize": null,
+    "resolution": {
+      "width": 0,
+      "height": 0
+    },
+    "fingerprint": {
+      "method": "manual-unbound",
+      "value": "manual-unbound"
+    }
+  },
+  "globalOffsetSeconds": 0,
+  "trackMetadata": {
+    "title": "Manual track",
+    "createdAt": "2026-09-15T00:00:00.000Z",
+    "updatedAt": "2026-09-15T00:00:00.000Z"
+  },
+  "items": [
+    {
+      "id": "manual-mute",
+      "type": "mute",
+      "start": 1,
+      "end": 2,
+      "enabled": true,
+      "locked": false
+    }
+  ]
+}

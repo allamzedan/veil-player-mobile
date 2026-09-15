@@ -1,0 +1,31 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "media_identity.missing-loaded-metadata",
+  "category": "media_identity",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "Missing loaded media identity cannot establish match or contradiction.",
+  "appliesTo": [
+    "media_identity"
+  ],
+  "input": {
+    "timelineIdentity": {
+      "name": "sample.mp4",
+      "duration": 120.0,
+      "fileSize": 1000000,
+      "resolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "fingerprint": {
+        "method": "metadata-v1",
+        "value": "sample.mp4|1000000|120.000|1920|1080"
+      }
+    },
+    "loadedMediaIdentity": null
+  },
+  "expected": {
+    "desktopRawMatchingResult": "NO_COMPARABLE_METADATA",
+    "identityStatus": "UNKNOWN"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "serialization.forward.unknown-field-roundtrip",
+  "category": "serialization",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "Unknown additive root data survives ordinary load-save.",
+  "appliesTo": [
+    "writer"
+  ],
+  "input": {
+    "fixture": "serialization/forward/unknown-field-roundtrip.veil"
+  },
+  "expected": {
+    "parserStatus": "ACCEPT",
+    "roundTrip": {
+      "preservePaths": [
+        "$.futureRoot"
+      ]
+    }
+  }
+}

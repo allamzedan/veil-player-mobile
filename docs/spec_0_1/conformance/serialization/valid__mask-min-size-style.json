@@ -1,0 +1,18 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "serialization.valid.mask-min-size-style",
+  "category": "serialization",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "Mask minimum width/height are exactly 1 percentage point; style.mode is solid; color is any nonempty string.",
+  "appliesTo": [
+    "canonical_validator",
+    "playback_reader"
+  ],
+  "input": {
+    "fixture": "serialization/valid/mask-min-size-style.veil"
+  },
+  "expected": {
+    "parserStatus": "ACCEPT"
+  }
+}

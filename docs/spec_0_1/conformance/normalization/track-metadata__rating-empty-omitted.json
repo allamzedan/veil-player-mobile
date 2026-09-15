@@ -1,0 +1,19 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "normalization.track-metadata.rating-empty-omitted",
+  "category": "normalization",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "Writer sanitizer omits empty-string rating.",
+  "appliesTo": [
+    "writer"
+  ],
+  "input": {
+    "trackMetadata": {
+      "rating": ""
+    }
+  },
+  "expected": {
+    "trackMetadata": {}
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "media_identity.youtube.video-id-mismatch",
+  "category": "media_identity",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "Different YouTube videoId contradicts provider media identity.",
+  "appliesTo": [
+    "media_identity"
+  ],
+  "input": {
+    "timelineIdentity": {
+      "kind": "youtube",
+      "provider": "youtube",
+      "videoId": "dQw4w9WgXcQ"
+    },
+    "loadedMediaIdentity": {
+      "kind": "youtube",
+      "provider": "youtube",
+      "videoId": "9bZkp7q19f0"
+    }
+  },
+  "expected": {
+    "desktopRawMatchingResult": {
+      "providerMatch": true,
+      "videoIdMatch": false
+    },
+    "identityStatus": "MISMATCH"
+  }
+}

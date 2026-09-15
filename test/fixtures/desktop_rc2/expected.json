@@ -1,0 +1,23 @@
+{
+  "desktopHead": "e99f262ae9ea172b495a231794c38f1025910728",
+  "writer": "actual RC2 buildVeilTrackFromStore / buildVeilTrackFromManualBuilderBatch",
+  "generatedAt": "2026-09-15T00:00:00.000Z",
+  "expected": {
+    "A-basic-local.veil": "ACCEPT",
+    "B-skip-positive-offset.veil": "ACCEPT",
+    "C-skip-negative-offset.veil": "ACCEPT",
+    "D-mute.veil": "ACCEPT",
+    "E-mask.veil": "ACCEPT",
+    "F-bookmark.veil": "ACCEPT",
+    "G-multiple-types.veil": "ACCEPT",
+    "H-disabled-items.veil": "ACCEPT",
+    "I-metadata-v1.veil": "ACCEPT",
+    "J-manual-unbound.veil": "ACCEPT",
+    "K-unknown-additive-field.veil": "ACCEPT",
+    "L-unknown-future-beside-known.veil": "ACCEPT_PARTIAL; unknown inert; known Mute active at host 1.5s",
+    "M-style-less-mask.veil": "ACCEPT",
+    "N-duplicate-item-ids.veil": "ACCEPT",
+    "O-malformed-known-item.veil": "REJECT_DOCUMENT",
+    "real-desktop-to-mobile.veil": "ACCEPT"
+  }
+}

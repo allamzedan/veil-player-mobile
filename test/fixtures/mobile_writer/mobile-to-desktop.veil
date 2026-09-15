@@ -1,0 +1,79 @@
+{
+  "version": "1.6.0",
+  "app": "VEIL",
+  "appVersion": "VEIL Mobile 0.2.3",
+  "exportedAt": "2026-09-15T05:58:19.413139Z",
+  "video": {
+    "name": "mobile-synthetic.mp4",
+    "duration": 12.345,
+    "fileSize": 123456,
+    "resolution": {
+      "width": 640,
+      "height": 360
+    },
+    "fingerprint": {
+      "method": "metadata-v1",
+      "value": "mobile-synthetic.mp4|123456|12.345|640|360"
+    },
+    "binding": "metadata"
+  },
+  "globalOffsetSeconds": -0.25,
+  "trackMetadata": {
+    "createdAt": "2026-09-15T05:58:19.384104Z",
+    "updatedAt": "2026-09-15T05:58:19.384104Z"
+  },
+  "items": [
+    {
+      "id": "mobile-mask",
+      "type": "mask",
+      "enabled": true,
+      "start": 1,
+      "end": 2,
+      "rect": {
+        "xPercent": 10.0,
+        "yPercent": 10.0,
+        "widthPercent": 25.0,
+        "heightPercent": 25.0
+      },
+      "style": {
+        "mode": "solid",
+        "color": "#000000",
+        "opacity": 1
+      },
+      "source": {
+        "kind": "manual"
+      }
+    },
+    {
+      "id": "mobile-mute",
+      "type": "mute",
+      "enabled": true,
+      "start": 2.5,
+      "end": 3.5
+    },
+    {
+      "id": "mobile-skip",
+      "type": "skip",
+      "enabled": true,
+      "start": 4,
+      "end": 5
+    },
+    {
+      "id": "mobile-bookmark",
+      "type": "bookmark",
+      "enabled": true,
+      "start": 6,
+      "end": 6,
+      "label": "Desktop reference"
+    }
+  ],
+  "subtitleCover": {
+    "mode": "show",
+    "regionRect": {
+      "xPercent": 10,
+      "yPercent": 78,
+      "widthPercent": 80,
+      "heightPercent": 18
+    }
+  }
+}

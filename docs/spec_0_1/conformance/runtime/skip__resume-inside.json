@@ -1,0 +1,50 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "runtime.skip.resume-inside",
+  "category": "runtime",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "runtime.skip.resume-inside",
+  "appliesTo": [
+    "runtime"
+  ],
+  "input": {
+    "initialState": {
+      "playbackState": "paused",
+      "position": 15,
+      "effectiveMediaDuration": 100,
+      "globalOffsetSeconds": 0,
+      "userMuted": false,
+      "volume": 1
+    },
+    "timeline": {
+      "items": [
+        {
+          "id": "skip-1",
+          "type": "skip",
+          "enabled": true,
+          "start": 10,
+          "end": 20
+        }
+      ]
+    },
+    "events": [
+      {
+        "type": "RESUME"
+      }
+    ]
+  },
+  "expected": {
+    "trace": [
+      {
+        "eventIndex": 0,
+        "actions": [
+          {
+            "type": "SEEK_TO",
+            "target": 20
+          }
+        ]
+      }
+    ]
+  }
+}

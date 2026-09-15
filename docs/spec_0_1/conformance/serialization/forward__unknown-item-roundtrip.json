@@ -1,0 +1,22 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "serialization.forward.unknown-item-roundtrip",
+  "category": "serialization",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "Unknown structurally isolated item survives ordinary load-save.",
+  "appliesTo": [
+    "writer"
+  ],
+  "input": {
+    "fixture": "serialization/forward/unknown-item-roundtrip.veil"
+  },
+  "expected": {
+    "parserStatus": "ACCEPT_PARTIAL",
+    "roundTrip": {
+      "preservePaths": [
+        "$.items[0]"
+      ]
+    }
+  }
+}

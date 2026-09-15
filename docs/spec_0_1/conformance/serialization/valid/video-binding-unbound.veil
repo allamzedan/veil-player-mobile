@@ -1,0 +1,21 @@
+{
+  "version": "1.6.0",
+  "app": "VEIL",
+  "video": {
+    "name": "manual-unbound",
+    "duration": 120.0,
+    "fileSize": null,
+    "resolution": {
+      "width": 0,
+      "height": 0
+    },
+    "fingerprint": {
+      "method": "manual-unbound",
+      "value": "manual-unbound"
+    },
+    "binding": "unbound"
+  },
+  "globalOffsetSeconds": 0,
+  "trackMetadata": {},
+  "items": []
+}

@@ -1,0 +1,33 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "media_identity.youtube.provider-video-id-match",
+  "category": "media_identity",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "YouTube identity is provider + videoId; canonicalUrl is not authoritative.",
+  "appliesTo": [
+    "media_identity"
+  ],
+  "input": {
+    "timelineIdentity": {
+      "kind": "youtube",
+      "provider": "youtube",
+      "videoId": "dQw4w9WgXcQ",
+      "canonicalUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    "loadedMediaIdentity": {
+      "kind": "youtube",
+      "provider": "youtube",
+      "videoId": "dQw4w9WgXcQ",
+      "canonicalUrl": "https://youtu.be/dQw4w9WgXcQ"
+    }
+  },
+  "expected": {
+    "desktopRawMatchingResult": {
+      "providerMatch": true,
+      "videoIdMatch": true,
+      "canonicalUrlAuthoritative": false
+    },
+    "identityStatus": "MATCH"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "runtime.bookmark.no-automatic-action",
+  "category": "runtime",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "runtime.bookmark.no-automatic-action",
+  "appliesTo": [
+    "runtime"
+  ],
+  "input": {
+    "initialState": {
+      "playbackState": "playing",
+      "position": 0,
+      "effectiveMediaDuration": 100,
+      "globalOffsetSeconds": 0,
+      "userMuted": false,
+      "volume": 1
+    },
+    "timeline": {
+      "items": [
+        {
+          "id": "bookmark-1",
+          "type": "bookmark",
+          "enabled": true,
+          "start": 15,
+          "end": 15,
+          "label": "Bookmark",
+          "notes": ""
+        }
+      ]
+    },
+    "events": [
+      {
+        "type": "POSITION",
+        "time": 15
+      }
+    ]
+  },
+  "expected": {
+    "trace": [
+      {
+        "eventIndex": 0,
+        "actions": [
+          {
+            "type": "BOOKMARK_AVAILABLE",
+            "itemIds": [
+              "bookmark-1"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

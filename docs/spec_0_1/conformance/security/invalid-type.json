@@ -1,0 +1,21 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "security.invalid-type",
+  "category": "security",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "Known canonical types are not coerced.",
+  "appliesTo": [
+    "canonical_validator",
+    "playback_reader"
+  ],
+  "input": {
+    "fixture": "serialization/invalid/invalid-numeric-type.veil"
+  },
+  "expected": {
+    "parserStatus": "REJECT_DOCUMENT",
+    "runtimeEffect": "NONE",
+    "networkEffect": "NONE",
+    "filesystemEffect": "NONE"
+  }
+}

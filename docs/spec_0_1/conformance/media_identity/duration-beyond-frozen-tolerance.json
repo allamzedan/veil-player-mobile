@@ -1,0 +1,49 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "media_identity.duration-beyond-frozen-tolerance",
+  "category": "media_identity",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "Desktop duration comparator flags >0.5s and fingerprint differs.",
+  "appliesTo": [
+    "media_identity"
+  ],
+  "input": {
+    "timelineIdentity": {
+      "name": "sample.mp4",
+      "duration": 120.0,
+      "fileSize": 1000000,
+      "resolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "fingerprint": {
+        "method": "metadata-v1",
+        "value": "sample.mp4|1000000|120.000|1920|1080"
+      }
+    },
+    "loadedMediaIdentity": {
+      "name": "sample.mp4",
+      "duration": 120.501,
+      "fileSize": 1000000,
+      "resolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "fingerprint": {
+        "method": "metadata-v1",
+        "value": "sample.mp4|1000000|120.501|1920|1080"
+      }
+    }
+  },
+  "expected": {
+    "desktopRawMatchingResult": {
+      "nameMismatch": false,
+      "fileSizeMismatch": false,
+      "durationMismatch": true,
+      "resolutionMismatch": false,
+      "fingerprintMismatch": true
+    },
+    "identityStatus": "MISMATCH"
+  }
+}

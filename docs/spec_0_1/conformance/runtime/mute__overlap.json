@@ -1,0 +1,81 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "runtime.mute.overlap",
+  "category": "runtime",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "runtime.mute.overlap",
+  "appliesTo": [
+    "runtime"
+  ],
+  "input": {
+    "initialState": {
+      "playbackState": "playing",
+      "position": 0,
+      "effectiveMediaDuration": 100,
+      "globalOffsetSeconds": 0,
+      "userMuted": false,
+      "volume": 1
+    },
+    "timeline": {
+      "items": [
+        {
+          "id": "mute-1",
+          "type": "mute",
+          "enabled": true,
+          "start": 10,
+          "end": 20
+        },
+        {
+          "id": "mute-2",
+          "type": "mute",
+          "enabled": true,
+          "start": 15,
+          "end": 30
+        }
+      ]
+    },
+    "events": [
+      {
+        "type": "POSITION",
+        "time": 16
+      },
+      {
+        "type": "POSITION",
+        "time": 21
+      },
+      {
+        "type": "POSITION",
+        "time": 31
+      }
+    ]
+  },
+  "expected": {
+    "trace": [
+      {
+        "eventIndex": 0,
+        "actions": [
+          {
+            "type": "MUTE_ACTIVE"
+          }
+        ]
+      },
+      {
+        "eventIndex": 1,
+        "actions": [
+          {
+            "type": "MUTE_ACTIVE"
+          }
+        ]
+      },
+      {
+        "eventIndex": 2,
+        "actions": [
+          {
+            "type": "MUTE_INACTIVE"
+          }
+        ]
+      }
+    ]
+  }
+}

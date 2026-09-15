@@ -1,0 +1,71 @@
+{
+  "version": "1.4.0",
+  "app": "VEIL",
+  "appVersion": "VEIL Mobile 0.2.0",
+  "exportedAt": "2026-05-19T12:00:00.000Z",
+  "video": {
+    "name": "sample.mp4",
+    "duration": 120,
+    "fileSize": 10485760,
+    "resolution": {
+      "width": 1280,
+      "height": 720
+    },
+    "fingerprint": {
+      "method": "metadata-v1",
+      "value": "sample.mp4|10485760|120.000|1280|720"
+    }
+  },
+  "globalOffsetSeconds": 0,
+  "trackMetadata": {
+    "createdAt": "2026-05-19T10:00:00.000Z",
+    "updatedAt": "2026-05-19T11:30:00.000Z"
+  },
+  "items": [
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "type": "mask",
+      "enabled": true,
+      "start": 8,
+      "end": 13,
+      "rect": {
+        "xPercent": 10,
+        "yPercent": 78,
+        "widthPercent": 80,
+        "heightPercent": 18
+      },
+      "style": {
+        "mode": "solid",
+        "color": "#000000",
+        "opacity": 1
+      },
+      "source": {
+        "kind": "manual"
+      }
+    },
+    {
+      "id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+      "type": "mute",
+      "enabled": true,
+      "start": 25,
+      "end": 28
+    },
+    {
+      "id": "c3d4e5f6-a7b8-9012-cdef-123456789012",
+      "type": "skip",
+      "enabled": true,
+      "start": 70,
+      "end": 75,
+      "label": "Intro skip"
+    }
+  ],
+  "subtitleCover": {
+    "mode": "smartCover",
+    "regionRect": {
+      "xPercent": 10,
+      "yPercent": 78,
+      "widthPercent": 80,
+      "heightPercent": 18
+    }
+  }
+}

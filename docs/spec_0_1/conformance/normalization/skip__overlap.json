@@ -1,0 +1,37 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "normalization.skip.overlap",
+  "category": "normalization",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "normalization.skip.overlap",
+  "appliesTo": [
+    "runtime"
+  ],
+  "input": {
+    "items": [
+      {
+        "id": "s1",
+        "type": "skip",
+        "enabled": true,
+        "start": 10,
+        "end": 20
+      },
+      {
+        "id": "s2",
+        "type": "skip",
+        "enabled": true,
+        "start": 15,
+        "end": 30
+      }
+    ]
+  },
+  "expected": {
+    "skipClusters": [
+      {
+        "start": 10,
+        "end": 30
+      }
+    ]
+  }
+}

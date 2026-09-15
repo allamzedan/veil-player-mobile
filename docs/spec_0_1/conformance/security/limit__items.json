@@ -1,0 +1,71 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "security.limit.items",
+  "category": "security",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "Configured conformance-test item limit is enforced.",
+  "appliesTo": [
+    "canonical_validator",
+    "playback_reader"
+  ],
+  "input": {
+    "resourcePolicy": {
+      "maxItems": 2
+    },
+    "document": {
+      "version": "1.6.0",
+      "app": "VEIL",
+      "video": {
+        "name": "sample.mp4",
+        "duration": 120.0,
+        "fileSize": 1000000,
+        "resolution": {
+          "width": 1920,
+          "height": 1080
+        },
+        "fingerprint": {
+          "method": "metadata-v1",
+          "value": "sample.mp4|1000000|120.000|1920|1080"
+        }
+      },
+      "globalOffsetSeconds": 0.0,
+      "trackMetadata": {},
+      "items": [
+        {
+          "id": "a",
+          "type": "mute",
+          "start": 1,
+          "end": 2
+        },
+        {
+          "id": "b",
+          "type": "mute",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "id": "c",
+          "type": "mute",
+          "start": 5,
+          "end": 6
+        }
+      ],
+      "subtitleCover": {
+        "mode": "show",
+        "regionRect": {
+          "xPercent": 10,
+          "yPercent": 78,
+          "widthPercent": 80,
+          "heightPercent": 18
+        }
+      }
+    }
+  },
+  "expected": {
+    "parserStatus": "LIMIT_EXCEEDED",
+    "runtimeEffect": "NONE",
+    "networkEffect": "NONE",
+    "filesystemEffect": "NONE"
+  }
+}

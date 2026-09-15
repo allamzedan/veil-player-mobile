@@ -1,0 +1,21 @@
+{
+  "vectorFormatVersion": "0.1",
+  "id": "normalization.track-metadata.rating-negative-preserved",
+  "category": "normalization",
+  "specVersion": "0.1",
+  "serializationProfile": "1.6.0",
+  "description": "Writer sanitizer preserves negative numeric rating.",
+  "appliesTo": [
+    "writer"
+  ],
+  "input": {
+    "trackMetadata": {
+      "rating": -5.25
+    }
+  },
+  "expected": {
+    "trackMetadata": {
+      "rating": -5.25
+    }
+  }
+}
