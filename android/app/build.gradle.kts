@@ -5,6 +5,23 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
+fun secureSigningValue(name: String): String? =
+    providers.gradleProperty(name)
+        .orElse(providers.environmentVariable(name))
+        .orNull
+
+val releaseStoreFile = secureSigningValue("VEIL_RELEASE_STORE_FILE")
+val releaseStorePassword = secureSigningValue("VEIL_RELEASE_STORE_PASSWORD")
+val releaseKeyAlias = secureSigningValue("VEIL_RELEASE_KEY_ALIAS")
+val releaseKeyPassword = secureSigningValue("VEIL_RELEASE_KEY_PASSWORD")
+val releaseSigningAvailable =
+    listOf(
+        releaseStoreFile,
+        releaseStorePassword,
+        releaseKeyAlias,
+        releaseKeyPassword,
+    ).all { !it.isNullOrBlank() }
+
 android {
     namespace = "com.veil.mobile"
     compileSdk = 36
@@ -23,11 +40,22 @@ android {
         versionName = flutter.versionName
     }
 
+    signingConfigs {
+        if (releaseSigningAvailable) {
+            create("release") {
+                storeFile = file(releaseStoreFile!!)
+                storePassword = releaseStorePassword
+                keyAlias = releaseKeyAlias
+                keyPassword = releaseKeyPassword
+            }
+        }
+    }
+
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            if (releaseSigningAvailable) {
+                signingConfig = signingConfigs.getByName("release")
+            }
         }
     }
 
@@ -40,4 +68,13 @@ android {
 
 flutter {
     source = "../.."
+}
+
+gradle.taskGraph.whenReady {
+    val releaseRequested = allTasks.any { it.name.contains("Release", ignoreCase = true) }
+    if (releaseRequested && !releaseSigningAvailable) {
+        throw GradleException(
+            "RELEASE SIGNING MATERIAL -- HUMAN ACTION REQUIRED: configure external VEIL release signing credentials.",
+        )
+    }
 }
