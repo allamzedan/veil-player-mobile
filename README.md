@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/images/veil-logo.png" alt="VEIL" width="120">
+</p>
+
 # VEIL Player Mobile
 
 **VEIL Player Mobile 0.2.3+1**
