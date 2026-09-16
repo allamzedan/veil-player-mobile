@@ -4,7 +4,7 @@ class AppLocalizationsAr extends AppLocalizations {
   const AppLocalizationsAr() : super._(AppLanguageCode.ar);
 
   @override
-  String get appName => 'VEIL Mobile';
+  String get appName => 'VEIL Player Mobile';
 
   // Route titles
   @override
@@ -181,7 +181,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String openIntentUnsupportedFile(String filename) =>
-      'لا يمكن لـ VEIL Mobile فتح "$filename". جرّب ملف فيديو أو مسار VEIL بصيغة JSON.';
+      'لا يمكن لـ VEIL Player Mobile فتح "$filename". جرّب ملف فيديو أو مسار VEIL بصيغة JSON.';
 
   @override
   String get trackNotFound => 'لم يُعثر على المسار المحفوظ';

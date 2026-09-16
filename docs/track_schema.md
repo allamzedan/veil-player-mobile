@@ -1,6 +1,6 @@
 # VEIL Track JSON Schema
 
-This document describes the **desktop-compatible VEIL track** format exported by VEIL Mobile and VEIL Desktop. Mobile also supports a legacy storage format (`format: "veil.track"`) documented in [Compatibility](#compatibility-notes).
+This document describes the **desktop-compatible VEIL track** format exported by VEIL Player Mobile and VEIL Player Desktop. Mobile also supports a legacy storage format (`format: "veil.track"`) documented in [Compatibility](#compatibility-notes).
 
 **Reference examples:** [examples/sample_track.json](examples/sample_track.json), [examples/sample_track_with_bookmark.json](examples/sample_track_with_bookmark.json)
 
@@ -114,7 +114,7 @@ Used for on-device storage and some imports:
 | `segments` | Array of mobile segment objects (`startMs` / `endMs` in milliseconds) |
 | `title`, `id`, `version`, `createdAt`, `updatedAt` | Track metadata |
 
-VEIL Mobile accepts both formats on import.
+VEIL Player Mobile accepts both formats on import.
 
 ---
 
@@ -123,7 +123,7 @@ VEIL Mobile accepts both formats on import.
 ### Forward compatibility
 
 - Clients **should ignore** item types they do not understand rather than failing the entire document.
-- VEIL Mobile skips malformed or unknown items during import and loads the rest of the track.
+- VEIL Player Mobile skips malformed or unknown items during import and loads the rest of the track.
 - Unknown top-level keys are preserved in `rawExtra` when possible.
 
 ### Bookmarks vs runtime actions

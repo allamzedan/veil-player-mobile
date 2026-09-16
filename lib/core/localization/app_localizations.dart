@@ -3,7 +3,7 @@ import 'package:veil_mobile/core/localization/app_locale.dart';
 
 part 'app_localizations_ar.dart';
 
-/// Locale-aware user-facing strings for VEIL Mobile.
+/// Locale-aware user-facing strings for VEIL Player Mobile.
 class AppLocalizations {
   const AppLocalizations._(this.languageCode);
 
@@ -21,7 +21,7 @@ class AppLocalizations {
     return en;
   }
 
-  String get appName => 'VEIL Mobile';
+  String get appName => 'VEIL Player Mobile';
 
   // Route titles
   String get homeTitle => 'Home';
@@ -100,7 +100,7 @@ class AppLocalizations {
   String get openIntentFileUnavailable =>
       'Could not open the selected file on this device.';
   String openIntentUnsupportedFile(String filename) =>
-      'VEIL Mobile cannot open "$filename". Try a video or VEIL JSON track file.';
+      'VEIL Player Mobile cannot open "$filename". Try a video or VEIL JSON track file.';
 
   String get trackNotFound => 'Saved track not found';
   String get playerEmptyTitle => 'Playback';

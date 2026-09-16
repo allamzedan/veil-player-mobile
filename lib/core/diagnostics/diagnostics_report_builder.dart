@@ -5,7 +5,7 @@ import 'package:veil_mobile/core/diagnostics/qa_checklist.dart';
 abstract final class DiagnosticsReportBuilder {
   static String build(DiagnosticsSnapshot snapshot) {
     final buffer = StringBuffer()
-      ..writeln('VEIL Mobile Diagnostics Report')
+      ..writeln('VEIL Player Mobile Diagnostics Report')
       ..writeln('Generated (UTC): ${snapshot.generatedAt.toIso8601String()}')
       ..writeln()
       ..writeln('== App ==')

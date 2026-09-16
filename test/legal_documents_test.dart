@@ -10,7 +10,7 @@ void main() {
       final text = await rootBundle.loadString(
         LegalDocumentId.privacyPolicy.assetPath,
       );
-      expect(text, contains('VEIL Mobile'));
+      expect(text, contains('VEIL Player Mobile'));
       expect(text, contains('analytics or advertising SDKs'));
       expect(text, contains('allamzedan@live.com'));
     });

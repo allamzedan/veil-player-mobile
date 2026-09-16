@@ -1,6 +1,6 @@
-# VEIL Mobile branding assets
+# VEIL Player Mobile branding assets
 
-Project-owned VEIL Mobile artwork for launcher icons and native splash.
+Project-owned VEIL Player Mobile artwork for launcher icons and native splash.
 Copyright 2026 Allam Zedan; distributed with the original Mobile source under
 Apache-2.0. No third-party artwork source is identified.
 

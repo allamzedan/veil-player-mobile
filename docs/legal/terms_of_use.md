@@ -1,18 +1,18 @@
-# VEIL Mobile — Terms of Use (Beta)
+# VEIL Player Mobile — Terms of Use (Beta)
 
 **Effective date:** September 15, 2026
 
 **Contact:** allamzedan@live.com
 
-> **Beta notice:** VEIL Mobile is an early development build. These terms are a beta placeholder, not a final lawyer-reviewed agreement. Features and terms may change.
+> **Beta notice:** VEIL Player Mobile is an early development build. These terms are a beta placeholder, not a final lawyer-reviewed agreement. Features and terms may change.
 
 ## Acceptance
 
-By installing or using VEIL Mobile, you agree to these Terms of Use. If you do not agree, do not use the app.
+By installing or using VEIL Player Mobile, you agree to these Terms of Use. If you do not agree, do not use the app.
 
 ## What the app does
 
-VEIL Mobile provides:
+VEIL Player Mobile provides:
 
 - **Local video playback** for files you open on your device
 - **VEIL track editing** — import, create, edit, and export VEIL-compatible JSON tracks
@@ -28,7 +28,7 @@ You are responsible for:
 - **Your files** — backing up exported VEIL tracks and any content you create
 - **Sharing** — anything you export or share through the system share sheet or file intents
 
-VEIL Mobile does not provide media files and does not monitor what you open.
+VEIL Player Mobile does not provide media files and does not monitor what you open.
 
 ## Exported VEIL files
 
@@ -36,7 +36,7 @@ Tracks you export are **your** files. You manage where they are stored and who r
 
 ## No warranty
 
-VEIL Mobile is provided **“as is”** during early development, **without warranties** of any kind, to the extent permitted by law.
+VEIL Player Mobile is provided **“as is”** during early development, **without warranties** of any kind, to the extent permitted by law.
 
 We do not guarantee that:
 
@@ -58,4 +58,4 @@ Questions about these terms: **allamzedan@live.com**
 
 ---
 
-*VEIL Mobile — beta terms of use v1*
+*VEIL Player Mobile — beta terms of use v1*

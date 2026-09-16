@@ -1,6 +1,6 @@
 # Android release signing
 
-VEIL Mobile release builds require a project release key stored outside this repository. Debug builds do not require release credentials and continue to use Android's normal debug signing.
+VEIL Player Mobile release builds require a project release key stored outside this repository. Debug builds do not require release credentials and continue to use Android's normal debug signing.
 
 ## Create the key (one-time human action)
 

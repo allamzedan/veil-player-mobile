@@ -1,6 +1,6 @@
-# Contributing to VEIL Mobile
+# Contributing to VEIL Player Mobile
 
-Thank you for contributing to VEIL Mobile.
+Thank you for contributing to VEIL Player Mobile.
 
 1. Create a focused branch and keep changes within Mobile's declared product
    and VEIL capability scope.

@@ -1,4 +1,4 @@
-# VEIL Mobile localization
+# VEIL Player Mobile localization
 
 Structure for multilingual support. English is the default; Arabic v1 provides full UI copy with RTL layout.
 

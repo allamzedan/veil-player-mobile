@@ -53,7 +53,7 @@ void main() {
 
       final report = DiagnosticsReportBuilder.build(snapshot);
 
-      expect(report, contains('VEIL Mobile Diagnostics Report'));
+      expect(report, contains('VEIL Player Mobile Diagnostics Report'));
       expect(report, contains('App version: 0.2.3+1'));
       expect(report, contains('Current route: /settings/diagnostics'));
       expect(report, contains('Video: clip.mp4'));

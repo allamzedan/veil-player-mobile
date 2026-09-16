@@ -1,20 +1,20 @@
-# VEIL Mobile — Privacy Policy
+# VEIL Player Mobile — Privacy Policy
 
 **Effective date:** September 15, 2026
 
 **Contact:** allamzedan@live.com
 
-> VEIL Mobile is currently pre-release software. This policy describes how the
+> VEIL Player Mobile is currently pre-release software. This policy describes how the
 > application handles information in version 0.2.3+1 and may be updated if its
 > behavior changes.
 
 ## Summary
 
-VEIL Mobile is designed to work **on your device**. We do not operate user accounts, cloud sync, analytics, advertising, or payment processing in this version of the app.
+VEIL Player Mobile is designed to work **on your device**. We do not operate user accounts, cloud sync, analytics, advertising, or payment processing in this version of the app.
 
 ## What the app handles locally
 
-When you use VEIL Mobile, information may be stored **only on your device**, including:
+When you use VEIL Player Mobile, information may be stored **only on your device**, including:
 
 - **Selected video files** — file names, paths, and related metadata needed to open and play videos you choose
 - **VEIL track data** — JSON track content you import, create, or edit in the app
@@ -23,11 +23,11 @@ When you use VEIL Mobile, information may be stored **only on your device**, inc
 - **Subtitles** — subtitle file names, paths, and parsed cue data from files you select
 - **Diagnostics reports** — only if **you** choose **Export diagnostics** in Settings; the report is shared through your device’s share sheet to a destination **you** pick
 
-The app does not send this data to VEIL Mobile servers because **there are no VEIL Mobile servers** in this version.
+The app does not send this data to VEIL Player Mobile servers because **there are no VEIL Player Mobile servers** in this version.
 
 ## What we do not collect
 
-In this beta version, VEIL Mobile does **not**:
+In this beta version, VEIL Player Mobile does **not**:
 
 - Require or provide user accounts
 - Sync your data to the cloud
@@ -46,11 +46,11 @@ You are responsible for what you share and with whom.
 
 ## Your files
 
-You choose which media and track files to open. VEIL Mobile reads files you select from your device storage. We do not control the content of those files.
+You choose which media and track files to open. VEIL Player Mobile reads files you select from your device storage. We do not control the content of those files.
 
 ## Children
 
-VEIL Mobile is not directed at children under 13, and we do not knowingly collect personal information from children.
+VEIL Player Mobile is not directed at children under 13, and we do not knowingly collect personal information from children.
 
 ## Changes
 
@@ -62,4 +62,4 @@ Questions about this policy: **allamzedan@live.com**
 
 ---
 
-*VEIL Mobile privacy policy v1*
+*VEIL Player Mobile privacy policy v1*

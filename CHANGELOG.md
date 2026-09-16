@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to VEIL Mobile are documented in this file.
+All notable changes to VEIL Player Mobile are documented in this file.
 
 ## 0.2.3+1 — Closed Beta RC4
 

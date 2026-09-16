@@ -1,6 +1,6 @@
 # Android permissions
 
-Audit of VEIL Mobile Android permissions for beta and Play Store release.
+Audit of VEIL Player Mobile Android permissions for beta and Play Store release.
 
 ## Summary
 
@@ -54,7 +54,7 @@ These do not grant storage access by themselves; the user chooses files via the 
 
 - **applicationId:** `com.veil.mobile`
 - **namespace:** `com.veil.mobile`
-- **App label:** `VEIL Mobile` (`res/values/strings.xml`)
+- **App label:** `VEIL Player Mobile` (`res/values/strings.xml`)
 
 ## Related docs
 

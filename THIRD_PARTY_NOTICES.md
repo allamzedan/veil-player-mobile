@@ -1,6 +1,6 @@
 # Third-party and separately licensed material
 
-VEIL Mobile original source code and project-owned branding are licensed under
+VEIL Player Mobile original source code and project-owned branding are licensed under
 the repository's Apache License 2.0. Copyright 2026 Allam Zedan.
 
 ## VEIL Conformance Corpus 0.1

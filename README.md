@@ -1,6 +1,6 @@
-# VEIL Mobile
+# VEIL Player Mobile
 
-VEIL Mobile is an open-source, non-normative mobile implementation of the
+VEIL Player Mobile is an open-source, non-normative mobile implementation of the
 [VEIL Interoperability Specification](https://github.com/allamzedan/veil).
 The normative authority is **VEIL Interoperability Specification 0.1**; this
 repository is an implementation, not a second copy of the specification.
@@ -14,7 +14,7 @@ not received the Android release validation described here.
 
 ## Capability scope and conformance
 
-VEIL Mobile is VEIL Spec 0.1 conforming within its declared capability scope:
+VEIL Player Mobile is VEIL Spec 0.1 conforming within its declared capability scope:
 
 - Reader
 - Writer
@@ -40,7 +40,7 @@ declared Mobile capability scope. This is not a claim of 113/113 PASS.
 
 ## What it does
 
-VEIL Mobile opens supported local media, reads and writes canonical `.veil`
+VEIL Player Mobile opens supported local media, reads and writes canonical `.veil`
 files, and executes supported Skip, Mute, Mask, and Bookmark semantics. It
 implements local media identity and interoperates with VEIL Player Desktop.
 Processing is local and non-destructive; VEIL actions do not alter the source
@@ -96,7 +96,7 @@ VEIL Player Desktop is a non-normative implementation reference.
 
 See the [privacy policy](docs/legal/privacy_policy.md).
 
-VEIL Mobile original source code and project-owned branding are provided under
+VEIL Player Mobile original source code and project-owned branding are provided under
 the Apache License 2.0. Copyright 2026 Allam Zedan.
 
 The imported frozen VEIL Conformance Corpus 0.1 remains under CC0 1.0

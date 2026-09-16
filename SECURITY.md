@@ -1,6 +1,6 @@
 # Security policy
 
-VEIL Mobile is currently a pre-release source candidate. Supported security
+VEIL Player Mobile is currently a pre-release source candidate. Supported security
 updates are tracked on the current development line; no response or release
 timeline is promised.
 

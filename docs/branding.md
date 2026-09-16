@@ -1,4 +1,4 @@
-# VEIL Mobile branding
+# VEIL Player Mobile branding
 
 Product identity reference for launcher name, app icons, in-app marks, and native splash.
 
@@ -6,10 +6,10 @@ Product identity reference for launcher name, app icons, in-app marks, and nativ
 
 | Platform | Value | Location |
 |----------|-------|----------|
-| Android | **VEIL Mobile** | `android/app/src/main/res/values/strings.xml` → `app_name` |
-| iOS | **VEIL Mobile** | `ios/Runner/Info.plist` → `CFBundleDisplayName` |
+| Android | **VEIL Player Mobile** | `android/app/src/main/res/values/strings.xml` → `app_name` |
+| iOS | **VEIL Player Mobile** | `ios/Runner/Info.plist` → `CFBundleDisplayName` |
 | iOS bundle id | **com.veil.mobile** | `ios/Runner.xcodeproj` → `PRODUCT_BUNDLE_IDENTIFIER` |
-| In-app | **VEIL Mobile** | `lib/shared/constants/app_strings.dart` → `appName` |
+| In-app | **VEIL Player Mobile** | `lib/shared/constants/app_strings.dart` → `appName` |
 
 Android manifest references `@string/app_name` in `AndroidManifest.xml`.
 
