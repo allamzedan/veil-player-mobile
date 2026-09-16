@@ -6,8 +6,7 @@
 
 **VEIL Player Mobile 0.2.3+1**
 
-VEIL Player Mobile is an open-source, **non-normative Android implementation** of the
-[VEIL Interoperability Specification](https://github.com/allamzedan/veil).
+VEIL Player Mobile is an open-source, **non-normative Android implementation** of the [VEIL Interoperability Specification](https://github.com/allamzedan/veil).
 
 The canonical **VEIL Interoperability Specification 0.1** remains authoritative.
 This repository contains an implementation, not normative VEIL material.
@@ -22,15 +21,11 @@ This repository contains an implementation, not normative VEIL material.
 
 ## What it does
 
-VEIL Player Mobile opens supported local media, reads and writes canonical `.veil`
-files, and executes supported Skip, Mute, Mask, and Bookmark semantics. It
-implements local media identity and interoperates with VEIL Player Desktop.
+VEIL Player Mobile opens supported local media, reads and writes canonical `.veil` files, and executes supported Skip, Mute, Mask, and Bookmark semantics. It implements local media identity and interoperates with VEIL Player Desktop.
 
-Processing is local and non-destructive. VEIL actions do not alter the source
-media file.
+Processing is local and non-destructive. VEIL actions do not alter the source media file.
 
-Flutter scaffolding for other platforms is retained, but those targets have not
-received the Android release validation described here.
+Flutter scaffolding for other platforms is retained, but those targets have not received the Android release validation described here.
 
 ## Capability scope and conformance
 
@@ -54,8 +49,7 @@ Final VEIL Conformance Corpus 0.1 result:
 0 UNTESTABLE
 ```
 
-The 9 N/A vectors are Provider Integration vectors outside Mobile's declared
-capability scope. This is not a claim of 113/113 PASS.
+The 9 N/A vectors are Provider Integration vectors outside Mobile's declared capability scope. This is not a claim of 113/113 PASS.
 
 ## Build and test
 
@@ -69,8 +63,7 @@ Validated toolchain:
 - Kotlin plugin 2.3.20
 - Java language level 17
 
-The successful local Android build used a JDK 21 runtime. JDK 21 is not a VEIL
-requirement; use a JDK compatible with the pinned Flutter/Gradle toolchain.
+The successful local Android build used a JDK 21 runtime. JDK 21 is not a VEIL requirement; use a JDK compatible with the pinned Flutter/Gradle toolchain.
 
 ```bash
 flutter pub get
@@ -89,21 +82,17 @@ flutter test test/conformance/spec_0_1_harness_test.dart --reporter expanded
 
 ## Interoperability
 
-Desktop-to-Mobile and Mobile-to-Desktop fixtures are under
-[`test/fixtures`](test/fixtures).
+Desktop-to-Mobile and Mobile-to-Desktop fixtures are under [`test/fixtures`](test/fixtures).
 
-The Desktop RC2 fixture set documents its provenance and deterministic generation in
-[`test/fixtures/desktop_rc2/README.md`](test/fixtures/desktop_rc2/README.md).
+The Desktop RC2 fixture set documents its provenance and deterministic generation in [`test/fixtures/desktop_rc2/README.md`](test/fixtures/desktop_rc2/README.md).
 
-VEIL Player Desktop is a non-normative implementation reference.
+VEIL Player Desktop is a non-normative Desktop implementation of VEIL.
 
 ## Security and privacy
 
-`.veil` files are passive declarative data. VEIL Player Mobile applies canonical
-validation and resource limits within its declared capability scope.
+`.veil` files are passive declarative data. VEIL Player Mobile applies canonical validation and resource limits within its declared capability scope.
 
-See the [privacy policy](docs/legal/privacy_policy.md) and
-[security policy](SECURITY.md).
+See the [privacy policy](docs/legal/privacy_policy.md) and [security policy](SECURITY.md).
 
 ## Related projects
 
@@ -112,14 +101,13 @@ See the [privacy policy](docs/legal/privacy_policy.md) and
 
 ## Licensing
 
-VEIL Player Mobile source code and project-owned branding are licensed under the
-[Apache License 2.0](LICENSE).
+VEIL Player Mobile source code and project-owned branding are licensed under the [Apache License 2.0](LICENSE).
 
 Copyright 2026 Allam Zedan.
 
-The imported frozen VEIL Conformance Corpus 0.1 remains under CC0 1.0 Universal.
-See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the corpus
-[licensing notice](docs/spec_0_1/conformance/README.md).
+Public contact: [allamzedan@live.com](mailto:allamzedan@live.com)
 
-Contributions are welcome under [CONTRIBUTING.md](CONTRIBUTING.md). Security
-reports should follow [SECURITY.md](SECURITY.md).
+The imported frozen VEIL Conformance Corpus 0.1 remains under CC0 1.0 Universal.
+See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the corpus [licensing notice](docs/spec_0_1/conformance/README.md).
+
+Contributions are welcome under [CONTRIBUTING.md](CONTRIBUTING.md). Security reports should follow [SECURITY.md](SECURITY.md).
