@@ -1,20 +1,36 @@
 # VEIL Player Mobile
 
-VEIL Player Mobile is an open-source, non-normative mobile implementation of the
+**VEIL Player Mobile 0.2.3+1**
+
+VEIL Player Mobile is an open-source, **non-normative Android implementation** of the
 [VEIL Interoperability Specification](https://github.com/allamzedan/veil).
-The normative authority is **VEIL Interoperability Specification 0.1**; this
-repository is an implementation, not a second copy of the specification.
 
-- Application version: `0.2.3+1`
-- Validated release target: Android
-- Desktop sibling: [VEIL Player](https://github.com/allamzedan/veil-player)
+The canonical **VEIL Interoperability Specification 0.1** remains authoritative.
+This repository contains an implementation, not normative VEIL material.
 
-Flutter scaffolding for other platforms is retained, but those targets have
-not received the Android release validation described here.
+- Validated release target: **Android**
+- Desktop sibling: [VEIL Player Desktop](https://github.com/allamzedan/veil-player)
+- Provider Integration: **Not claimed**
+
+<p align="center">
+  <img src="docs/images/veil-player-mobile.png" alt="VEIL Player Mobile on Android" width="320">
+</p>
+
+## What it does
+
+VEIL Player Mobile opens supported local media, reads and writes canonical `.veil`
+files, and executes supported Skip, Mute, Mask, and Bookmark semantics. It
+implements local media identity and interoperates with VEIL Player Desktop.
+
+Processing is local and non-destructive. VEIL actions do not alter the source
+media file.
+
+Flutter scaffolding for other platforms is retained, but those targets have not
+received the Android release validation described here.
 
 ## Capability scope and conformance
 
-VEIL Player Mobile is VEIL Spec 0.1 conforming within its declared capability scope:
+VEIL Player Mobile conforms to VEIL Spec 0.1 within its declared capability scope:
 
 - Reader
 - Writer
@@ -23,10 +39,9 @@ VEIL Player Mobile is VEIL Spec 0.1 conforming within its declared capability sc
 - Canonical Validation
 - Resource Safety
 
-Provider Integration is not claimed. Provider/YouTube integration is not
-supported.
+**Provider Integration is not claimed.** YouTube/provider integration is not supported.
 
-Frozen VEIL Conformance Corpus 0.1 result:
+Final VEIL Conformance Corpus 0.1 result:
 
 ```text
 104 PASS
@@ -35,24 +50,8 @@ Frozen VEIL Conformance Corpus 0.1 result:
 0 UNTESTABLE
 ```
 
-The nine N/A vectors are Provider Integration/YouTube vectors outside the
-declared Mobile capability scope. This is not a claim of 113/113 PASS.
-
-## What it does
-
-VEIL Player Mobile opens supported local media, reads and writes canonical `.veil`
-files, and executes supported Skip, Mute, Mask, and Bookmark semantics. It
-implements local media identity and interoperates with VEIL Player Desktop.
-Processing is local and non-destructive; VEIL actions do not alter the source
-media file.
-
-## Security model
-
-`.veil` files are passive declarative data. Parsing a file does not grant it
-authority to execute arbitrary code or processes, access arbitrary files, or
-perform arbitrary network requests. Resource limits and canonical validation
-are applied within Mobile's declared scope. This is an implementation summary,
-not a security guarantee beyond the normative specification.
+The 9 N/A vectors are Provider Integration vectors outside Mobile's declared
+capability scope. This is not a claim of 113/113 PASS.
 
 ## Build and test
 
@@ -84,23 +83,38 @@ flutter test test/conformance/spec_0_1_harness_test.dart --reporter expanded
 
 `pubspec.lock` is committed because this is an application repository.
 
-## Interoperability evidence
+## Interoperability
 
 Desktop-to-Mobile and Mobile-to-Desktop fixtures are under
-[`test/fixtures`](test/fixtures). The Desktop RC2 fixture set documents its
-provenance and deterministic generation in
+[`test/fixtures`](test/fixtures).
+
+The Desktop RC2 fixture set documents its provenance and deterministic generation in
 [`test/fixtures/desktop_rc2/README.md`](test/fixtures/desktop_rc2/README.md).
+
 VEIL Player Desktop is a non-normative implementation reference.
 
-## Privacy and licensing
+## Security and privacy
 
-See the [privacy policy](docs/legal/privacy_policy.md).
+`.veil` files are passive declarative data. VEIL Player Mobile applies canonical
+validation and resource limits within its declared capability scope.
 
-VEIL Player Mobile original source code and project-owned branding are provided under
-the Apache License 2.0. Copyright 2026 Allam Zedan.
+See the [privacy policy](docs/legal/privacy_policy.md) and
+[security policy](SECURITY.md).
 
-The imported frozen VEIL Conformance Corpus 0.1 remains under CC0 1.0
-Universal. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the corpus
+## Related projects
+
+- [VEIL — canonical interoperability specification](https://github.com/allamzedan/veil)
+- [VEIL Player Desktop](https://github.com/allamzedan/veil-player)
+
+## Licensing
+
+VEIL Player Mobile source code and project-owned branding are licensed under the
+[Apache License 2.0](LICENSE).
+
+Copyright 2026 Allam Zedan.
+
+The imported frozen VEIL Conformance Corpus 0.1 remains under CC0 1.0 Universal.
+See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the corpus
 [licensing notice](docs/spec_0_1/conformance/README.md).
 
 Contributions are welcome under [CONTRIBUTING.md](CONTRIBUTING.md). Security
