@@ -16,7 +16,7 @@ This repository contains an implementation, not normative VEIL material.
 - Provider Integration: **Not claimed**
 
 <p align="center">
-  <img src="docs/images/veil-player-mobile.png" alt="VEIL Player Mobile on Android" width="320">
+  <img src="docs/images/veil-player-mobile-screenshot.png" alt="VEIL Player Mobile on Android" width="320">
 </p>
 
 ## What it does
